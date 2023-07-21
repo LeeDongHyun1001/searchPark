@@ -1,0 +1,96 @@
+html {
+  font-size: 10px; /* rem 기준 */
+}
+.header {
+  display: flex;
+  background-color: rgb(218, 252, 252);
+  height: 15rem;
+  line-height: 15rem;
+  padding: 0 2rem;
+}
+
+.header .title {
+  flex: 8;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.header .loginBox {
+}
+.header .loginBox button {
+  border: none;
+  background: none;
+}
+
+.container {
+  padding: 3rem 0;
+}
+.container section {
+  width: 100%;
+  font-size: 1.8rem;
+  margin: 3rem 0;
+  background-color: beige;
+}
+.adBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.adBox .adImgBox {
+  width: 48%;
+}
+.adBox .adImgBox .img {
+  height: 100%;
+  background-color: tomato;
+}
+
+.adBox .adInfoBox {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.adBox .adInfoBox > * {
+  padding: 1rem 0;
+}
+.adBox .adInfoBox .adTitle {
+  width: 100%;
+}
+.adBox .adInfoBox .adDescr {
+  width: 100%;
+}
+.adBox .adInfoBox .adLink {
+  width: 100%;
+}
+.adBox .adInfoBox .adLink a {
+}
+
+.searchBox {
+  padding: 2rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+.searchBox .parkSearchBox {
+  display: flex;
+}
+.searchBox .parkSearchBox > input {
+  display: block;
+  height: 3rem;
+}
+.searchBox .parkSearchBox > .search {
+  display: block;
+  background: rgb(58, 58, 252);
+  padding: 0 1rem;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+}
+.searchBox .parkSearchBox .searchRegion {
+  width: 25%;
+}
+.searchBox .parkSearchBox div {
+  margin: 0 2rem;
+}
+
+.viewData {
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주차장 & 충전소 찾기</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">전기차 충전소 & 공영주차장 찾기</h1>
+      <div class="loginBox">
+        <button class="login">로그인</button>
+      </div>
+    </header>
+    <main class="container">
+      <section class="adBox section">
+        <div class="adImgBox">
+          <div class="img"></div>
+        </div>
+        <div class="adInfoBox">
+          <h2 class="adTitle">광고 제목</h2>
+          <p class="adDescr">광고 설명</p>
+          <p class="adLink">
+            <a href="#">광고링크</a>
+          </p>
+        </div>
+      </section>
+      <section class="searchBox section">
+        <form name="choicePark" type="get" class="parkSearchBox">
+          <input
+            type="text"
+            class="searchRegion"
+            placeholder="서울특별시 종로구 종로16길 24"
+          />
+          <div>
+            <input type="radio" name="park" id="publicPark" value="publicPark" checked />
+            <label for="publicPark">공영주차장</label>
+          </div>
+          <div>
+            <input type="radio" name="park" id="chargingStation" value="chargingStation" />
+            <label for="chargingStation">전기차 충전소</label>
+          </div>
+          <input type="submit" class="search" value="검색">
+        </form>
+      </section>
+      <section class="viewData">
+        <table>
+          <th>주차장 목록</th>
+          <tr>
+            <td>주소</td>
+            <td>서울특별시 종로구 종로16길 24</td>
+          </tr>
+          <tr>
+            <td>요금</td>
+            <td>기본요금: 유료 | 주차기본요금: 500</td>
+          </tr>
+          <tr>
+            <td>운영시간</td>
+            <td>
+              평일운영시간: 10:00~22:00 | 토요일운영시간: 10:00~18:00 |
+              공휴일운영시간: 0:00~0:00
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
