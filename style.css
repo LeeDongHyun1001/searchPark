@@ -1,5 +1,6 @@
-html {
+html, input {
   font-size: 10px; /* rem 기준 */
+  font-family: 'Orbit', sans-serif;
 }
 .header {
   display: flex;
